@@ -1,0 +1,13 @@
+{
+  "name": "Flightless-Dragon",
+  "description": "First pass at a game!",
+  "version": "0.0.1",
+  "dependencies": {
+    "ecstatic": "^1.4.0",
+    "socket.io": "^1.4.5"
+  },
+  "scripts": {
+    "start": "node --nouse-idle-notification --expose-gc --max-old-space-size=8192 index.js",
+    "debug": "node-debug index.js"
+  }
+}

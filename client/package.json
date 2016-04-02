@@ -1,0 +1,9 @@
+
+{
+  "name": "Bronze-Drake",
+  "description": "First pass at a game client!",
+  "version": "0.0.1",
+  "dependencies": {
+    "socket.io": "^1.4.5"
+  }
+}
