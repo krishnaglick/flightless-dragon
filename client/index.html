@@ -2,10 +2,19 @@
 <html>
   <head>
     <script type="text/javascript" src="node_modules/socket.io-client/socket.io.js"></script>
-    <script type="text/javascript" src="game.js"></script>
+    <script type="text/javascript" src="player.js"></script>
+    <script type="text/javascript" src="app.js"></script>
     <title>Gaem Test</title>
   </head>
   <body>
-    <h1>potato</h1>
+    <div>Welcome to Gaem Test! Please provide a character name and connection info!</div>
+    <div>
+      <input type="text" placeholder="Character Name" id="charName">
+      <button>Random Name</button>
+    </div>
+    <div><input type="text" placeholder="IP:Port" value="http://localhost:8080" id="connectionInfo"></div>
+    <div>
+      <button onclick="app.join()">Join</button>
+    </div>
   </body>
 </html>

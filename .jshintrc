@@ -2,5 +2,7 @@
   "esnext": true,
   "expr": true,
   "loopfunc": true,
-  "node": true
+  "node": true,
+  "browser": true,
+  "devel": true
 }
