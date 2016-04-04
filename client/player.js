@@ -1,7 +1,7 @@
 
 'use strict';
 
-class Player {
+module.exports = class Player {
   constructor(character) {
     this.name = character.name;
     this.x = character.x || 0;
@@ -15,4 +15,4 @@ class Player {
       this[key] = data[key];
     }
   }
-}
+};

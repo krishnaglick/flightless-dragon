@@ -5,5 +5,8 @@
   "version": "0.0.1",
   "dependencies": {
     "socket.io": "^1.4.5"
+  },
+  "scripts": {
+    "start": "node node_modules/watchify/bin/cmd app.js -o static/bundle.js -v"
   }
 }

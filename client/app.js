@@ -1,15 +1,20 @@
-/*globals io, Player */
+
 'use strict';
+
+let io = require('socket.io-client');
+let Player = require('./player');
 
 class App {
 
   join() {
     let name = document.getElementById('charName').value;
     let connInfo = document.getElementById('connectionInfo').value;
+
     if(!name)
       return alert('Need a name!');
     if(!connInfo)
       return alert('Connection Info Required!');
+
     this.socket = io.connect(connInfo);
     this.players = {};
 
